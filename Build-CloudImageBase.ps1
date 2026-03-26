@@ -1,6 +1,6 @@
 # ====================== PATH CONFIG ======================
 # Base directory for VM images
-$pathImage = "F:\HyperScripts\"
+$pathImage = "F:\Hyper-V\"
 # Ubuntu Noble cloud image URL
 $Imageurl = "https://cloud-images.ubuntu.com/noble/current/noble-server-cloudimg-amd64.img"
 # Full path to the downloaded cloud image
@@ -48,7 +48,7 @@ if (-not (Test-Path $sourceImage)) {
 Write-Host "`n=== Converting cloud image to VHDX ===" -ForegroundColor Cyan
 
 # Convert format: qcow2 -> dynamic VHDX
-& qemu-img.exe convert -f qcow2 "$sourceImage" -O vhdx -o subformat=dynamic "$outputVHDX"
+& .\qemu-img\qemu-img.exe convert -f qcow2 "$sourceImage" -O vhdx -o subformat=dynamic "$outputVHDX"
 
 if (-not (Test-Path $outputVHDX)) {
     Write-Error "ERROR: VHDX conversion failed!"

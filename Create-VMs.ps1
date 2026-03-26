@@ -2,7 +2,7 @@
 # Virtual machine storage path
 $baseVMpath = "F:\Hyper-V"
 # VHDX disk file path
-$parentDisk = "F:\HyperScripts\noble-server-cloudimg-amd64.vhdx"
+$parentDisk = "$baseVMpath\noble-server-cloudimg-amd64.vhdx"
 $vmSwitch = "InternalSwitch"
 $sshPubKey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHZYwe7mwE3fYmQ8mgCgqbZlY18PrkhtdKJRw1j+BMYr inboc@tech-ubuntu-xj"
 # Virtual machine list to create
@@ -95,7 +95,7 @@ disable_root: true
 "@ | Out-File "$nocloudPath\user-data" -Encoding ASCII -Force
 
     # Create metadata ISO image
-    oscdimg.exe "$nocloudPath" "$isoPath" -j2 -lcidata | Out-Null
+    .\oscdimg.exe "$nocloudPath" "$isoPath" -j2 -lcidata | Out-Null
 
     # Mount ISO and set boot order
     Set-VM -VMName $vmName -AutomaticStopAction ShutDown -AutomaticStartAction StartIfRunning
