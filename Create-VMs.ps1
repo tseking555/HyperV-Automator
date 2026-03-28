@@ -4,18 +4,19 @@ $baseVMpath = "F:\Hyper-V"
 # VHDX disk file path
 $parentDisk = "$baseVMpath\noble-server-cloudimg-amd64.vhdx"
 $vmSwitch = "InternalSwitch"
-$sshPubKey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHZYwe7mwE3fYmQ8mgCgqbZlY18PrkhtdKJRw1j+BMYr inboc@tech-ubuntu-xj"
+$sshPubKey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAGylQone9YMJ03ub5BpLtNbTPG9lSUCHY03p7987AGc king-labs"
 # Virtual machine list to create
 $vmList = @(
-    @{ Name = "king-sys-prod-dns-01"; IP = "192.168.137.1/24"; Cores = "1"; Memory = "1" },
-    @{ Name = "king-sys-prod-dns-02"; IP = "192.168.137.2/24"; Cores = "1"; Memory = "1" },
-    @{ Name = "king-sys-prod-chrony"; IP = "192.168.137.3/24"; Cores = "1"; Memory = "1" },
-    @{ Name = "king-sys-prod-nginx"; IP = "192.168.137.4/24"; Cores = "1"; Memory = "2" },
-    @{ Name = "king-sys-prod-postgresql"; IP = "192.168.137.5/24"; Cores = "2"; Memory = "4" },
-    @{ Name = "king-sys-prod-mysql"; IP = "192.168.137.6/24"; Cores = "2"; Memory = "4" },
-    @{ Name = "king-sys-prod-rke2-01"; IP = "192.168.137.7/24"; Cores = "2"; Memory = "4" },
-    @{ Name = "king-sys-prod-rke2-02"; IP = "192.168.137.8/24"; Cores = "2"; Memory = "4" },
-    @{ Name = "king-sys-prod-rke2-03"; IP = "192.168.137.9/24"; Cores = "2"; Memory = "4" }
+#     @{ Name = "king-sys-prod-dns-01"; IP = "192.168.137.1/24"; Cores = "1"; Memory = "1" },
+#     @{ Name = "king-sys-prod-dns-02"; IP = "192.168.137.2/24"; Cores = "1"; Memory = "1" },
+#     @{ Name = "king-sys-prod-chrony"; IP = "192.168.137.3/24"; Cores = "1"; Memory = "1" },
+#     @{ Name = "king-sys-prod-nginx"; IP = "192.168.137.4/24"; Cores = "1"; Memory = "2" },
+#     @{ Name = "king-sys-prod-postgresql"; IP = "192.168.137.5/24"; Cores = "2"; Memory = "4" },
+#     @{ Name = "king-sys-prod-mysql"; IP = "192.168.137.6/24"; Cores = "2"; Memory = "4" },
+#     @{ Name = "king-sys-prod-rke2-01"; IP = "192.168.137.7/24"; Cores = "2"; Memory = "4" },
+#     @{ Name = "king-sys-prod-rke2-02"; IP = "192.168.137.8/24"; Cores = "2"; Memory = "4" },
+#     @{ Name = "king-sys-prod-rke2-03"; IP = "192.168.137.9/24"; Cores = "2"; Memory = "4" }
+    @{ Name = "king-sys-test-lnmp"; IP = "192.168.137.50/24"; Cores = "2"; Memory = "4" }
 )
 # ======================================================
 
