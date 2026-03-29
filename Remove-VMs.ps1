@@ -3,15 +3,15 @@
 $baseVMpath = "F:\Hyper-V"
 # List of virtual machines to be deleted
 $vmList = @(
-#     "king-sys-prod-dns-01",
-#     "king-sys-prod-dns-02",
-#     "king-sys-prod-chrony",
-#     "king-sys-prod-nginx",
-#     "king-sys-prod-postgresql",
-#     "king-sys-prod-mysql",
-#     "king-sys-prod-rke2-01",
-#     "king-sys-prod-rke2-02",
-#     "king-sys-prod-rke2-03",
+     "king-sys-prod-dns-01",
+     "king-sys-prod-dns-02",
+     "king-sys-prod-chrony",
+     "king-sys-prod-nginx",
+     "king-sys-prod-postgresql",
+     "king-sys-prod-mysql",
+     "king-sys-prod-rke2-01",
+     "king-sys-prod-rke2-02",
+     "king-sys-prod-rke2-03",
     "king-sys-test-lnmp"
 )
 # ========================================================================
