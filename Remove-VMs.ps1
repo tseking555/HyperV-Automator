@@ -14,7 +14,7 @@ $vmList = @(
 #     "king-sys-prod-rke2-03",
 #     "king-sys-test-lnmp",
 #     "king-sys-test-openclaw"
-     "king-sys-test-newapi"
+#     "king-sys-test-newapi"
 )
 # ========================================================================
 
