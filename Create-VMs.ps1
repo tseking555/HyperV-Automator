@@ -16,8 +16,8 @@ $vmList = @(
 #     @{ Name = "king-sys-prod-rke2-01"; IP = "192.168.137.17/24"; Cores = "2"; Memory = "4" },
 #     @{ Name = "king-sys-prod-rke2-02"; IP = "192.168.137.18/24"; Cores = "2"; Memory = "4" },
 #     @{ Name = "king-sys-prod-rke2-03"; IP = "192.168.137.19/24"; Cores = "2"; Memory = "4" }
-#     @{ Name = "king-sys-test-lnmp"; IP = "192.168.137.50/24"; Cores = "2"; Memory = "4" }
-#     @{ Name = "king-sys-prod-opencode"; IP = "192.168.137.51/24"; Cores = "4"; Memory = "8" }
+#     @{ Name = "king-sys-prod-openlist"; IP = "192.168.137.50/24"; Cores = "2"; Memory = "4" }
+     @{ Name = "king-sys-prod-opencode"; IP = "192.168.137.51/24"; Cores = "1"; Memory = "2" }
 #     @{ Name = "king-sys-test-newapi"; IP = "192.168.137.52/24"; Cores = "4"; Memory = "8" }
 )
 # ======================================================
